@@ -7,7 +7,6 @@ import ua.kpi.its.lab.data.entity.Processor
 import ua.kpi.its.lab.data.repo.SatelliteRepository
 import ua.kpi.its.lab.data.repo.ProcessorRepository
 import ua.kpi.its.lab.data.svc.SatelliteService
-import ua.kpi.its.lab.data.svc.ProcessorService
 
 @Service
 class SatelliteServiceImpl @Autowired constructor(
@@ -43,46 +42,6 @@ class SatelliteServiceImpl @Autowired constructor(
     }
 
     override fun deleteByIndex(index: Int): Satellite {
-        val target = this.readByIndex(index)
-        this.delete(target)
-        return target
-    }
-}
-
-@Service
-class ProcessorServiceImpl @Autowired constructor(
-    private val repository: ProcessorRepository
-): ProcessorService {
-    override fun create(processor: Processor): Processor {
-        if (processor.id != -1L && repository.existsById(processor.id)) {
-            throw IllegalArgumentException("Processor with ID = ${processor.id} already exists")
-        }
-        return repository.save(processor)
-    }
-
-    override fun read(): List<Processor> {
-        return repository.findAll()
-    }
-
-    override fun readByIndex(index: Int): Processor {
-        return this.read()[index]
-    }
-
-    override fun update(processor: Processor): Processor {
-        if (!repository.existsById(processor.id)) {
-            throw IllegalArgumentException("Processor with ID = ${processor.id} not found")
-        }
-        return repository.save(processor)
-    }
-
-    override fun delete(processor: Processor) {
-        if (!repository.existsById(processor.id)) {
-            throw IllegalArgumentException("Processor with ID = ${processor.id} not found")
-        }
-        repository.deleteById(processor.id)
-    }
-
-    override fun deleteByIndex(index: Int): Processor {
         val target = this.readByIndex(index)
         this.delete(target)
         return target
