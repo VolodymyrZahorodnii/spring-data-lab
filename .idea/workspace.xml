@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d281f2a7-5933-4203-9b05-c6cea96271ea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/entity/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/entity/Entity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/repo/Repository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/repo/Repository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/svc/EntityService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ua/kpi/its/lab/data/svc/EntityService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="SharedIndexes">
